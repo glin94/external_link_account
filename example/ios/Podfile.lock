@@ -1,0 +1,22 @@
+PODS:
+  - external_link_account (0.0.1):
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - external_link_account (from `.symlinks/plugins/external_link_account/ios`)
+  - Flutter (from `Flutter`)
+
+EXTERNAL SOURCES:
+  external_link_account:
+    :path: ".symlinks/plugins/external_link_account/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  external_link_account: 07299f01c5b838a4f673c3e2dfe562b0703546ea
+  Flutter: f04841e97a9d0b0a8025694d0796dd46242b2854
+
+PODFILE CHECKSUM: ef19549a9bc3046e7bb7d2fab4d021637c0c58a3
+
+COCOAPODS: 1.11.3

@@ -1,0 +1,26 @@
+name: external_link_account
+description: A Flutter iOS plugin for ExternalLinkAccount API
+version: 0.0.1
+repository: https://github.com/glin94/external_link_account/
+issue_tracker: https://github.com/glin94/external_link_account/issue/
+
+environment:
+  sdk: ">=2.19.4 <3.0.0"
+  flutter: ">=2.5.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  pigeon: ^9.1.4
+
+flutter:
+  plugin:
+    platforms:
+      ios:
+        pluginClass: ExternalLinkAccountPlugin
