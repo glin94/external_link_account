@@ -5,7 +5,7 @@ repository: https://github.com/glin94/external_link_account/
 issue_tracker: https://github.com/glin94/external_link_account/issue/
 
 environment:
-  sdk: ">=2.19.4 <3.0.0"
+  sdk: ">=2.17.5 <3.0.0"
   flutter: ">=2.5.0"
 
 dependencies:

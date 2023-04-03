@@ -16,6 +16,7 @@ public class ExternalLinkAccountPlugin: NSObject, FlutterPlugin,ExternalLinkAcco
                         let canOpen = await ExternalLinkAccount.canOpen
                         if(canOpen) {
                             try await ExternalLinkAccount.open()
+                            return completion(.success(ResponseResult(state: ResultState.success, message: "External link succesfully opened")))
                         }
                         else {
                             return completion(.success(ResponseResult(state: ResultState.error, message: "Can't use to open the external link")))
