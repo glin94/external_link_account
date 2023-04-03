@@ -2,6 +2,10 @@
 
 Flutter iOS plugin for ExternalLinkAccount API
 
+This functionality is only available to apps with the [com.apple.developer.storekit.external-link.account](https://developer.apple.com/documentation/bundleresources/entitlements/com_apple_developer_storekit_external-link_account) entitlement.
+
+For more information, see [Distributing “reader” apps with a link to your website](https://developer.apple.com/support/reader-apps/).
+
 ## Usage
 
 Add `external_link_account` as a dependency in your pubspec.yaml file.
@@ -11,21 +15,13 @@ Add `external_link_account` as a dependency in your pubspec.yaml file.
 ```dart
 // Import package
 import 'package:external_link_account/external_link_account.dart';
-// Instantiate it
-final externalLinkAccount = ExternalLinkAccount();
 
-/// Open
-final result = await _externalLinkAccountPlugin.open();
-exte
-// Access current battery level
-print(await   battery.batteryLevel);
-// Be informed when the state (full, charging, discharging) changes
-battery.onBatteryStateChanged.listen((BatteryState state) {
-  // Do something with new state
-});
+// Presents a continuation sheet
+await ExternalLinkAccount.instance.open();
+
+
 ```
 
 ## Learn more
 
-- [API Documentation](https://pub.dev/documentation/battery_plus/latest/battery_plus/battery_plus-library.html)
-
+- [Swift API Documentation](https://developer.apple.com/documentation/storekit/externallinkaccount)
