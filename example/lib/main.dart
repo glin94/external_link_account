@@ -17,14 +17,14 @@ class MyApp extends StatefulWidget {
 
 class _MyAppState extends State<MyApp> {
   String _message = '';
-  final _externalLinkAccountPlugin = ExternalLinkAccount();
 
   // Platform messages are asynchronous, so we initialize in an async method.
   Future<void> openLink() async {
     String message;
 
     try {
-      final result = await _externalLinkAccountPlugin.open();
+      final result =await ExternalLinkAccount.instance.open();
+
       message = result.message;
     } on PlatformException {
       message = 'Failed to open external link.';
